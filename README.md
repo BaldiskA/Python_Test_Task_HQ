@@ -31,6 +31,7 @@ python manage.py createsuperuser
 ```
 # Пример запроса к API:
 Список пользователей:
+
 GET-запрос
 ```
 http://localhost/api/users/
@@ -46,10 +47,13 @@ http://localhost/api/users/
 "is_subscribed": false
 }
 ```
-Регистрация пользователя
-POST-запрос
-http://localhost/api/users/
+Регистрация пользователя:
 
+POST-запрос
+```
+http://localhost/api/users/
+```
+```
 {
 "email": "vpupkin@yandex.ru",
 "username": "vasya.pupkin",
@@ -57,11 +61,14 @@ http://localhost/api/users/
 "last_name": "Пупкин",
 "password": "Qwerty123"
 }
+```
+Профиль пользователя:
 
-Профиль пользователя
 GET-запрос
+```
 http://localhost/api/users/{id}/
-
+```
+```
 {
 "email": "user@example.com",
 "id": 0,
@@ -69,37 +76,54 @@ http://localhost/api/users/{id}/
 "first_name": "Вася",
 "last_name": "Пупкин",
 }
+```
+Текущий пользователь:
 
-Текущий пользователь
 GET-запрос
+```
 http://localhost/api/users/me/
+```
+Изменение пароля:
 
-Изменение пароля
 POST-запрос
+```
 http://localhost/api/users/set_password/
+```
+```
 {
 "new_password": "string",
 "current_password": "string"
 }
+```
+Получить токен авторизации:
 
-Получить токен авторизации
 POST-запрос
+```
 http://localhost/api/auth/token/login/
+```
+```
 {
 "password": "string",
 "username": "string"
 }
+```
+Удаление токена:
 
-Удаление токена
 POST-запрос
+```
 http://localhost/api/auth/token/logout/
+```
+## Просмотр выполнения тестового задания
 
-Посмотреть выполнение первого задания по запросам API
+### Посмотреть выполнение первого задания по запросам API:
+```
 http://localhost/api/lesson-access/
-
-Посмотреть выполнение второго задания по запросам API
+```
+### Посмотреть выполнение второго задания по запросам API:
+```
 http://localhost/api/product-lesson-access/<int:product_id>/
-
-Посмотреть выполнение третьего задания по запросам API
+```
+### Посмотреть выполнение третьего задания по запросам API:
+```
 http://localhost/api/product-stats/
-
+```
