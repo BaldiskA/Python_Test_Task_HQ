@@ -5,7 +5,7 @@ from .views import CustomUserViewSet, LessonAccessViewSet
 
 router = routers.DefaultRouter()
 
-router.register('taskone', LessonAccessViewSet, basename='taskone')
+router.register('lesson-access', LessonAccessViewSet, basename='lesson-access')
 router.register('users', CustomUserViewSet, basename='users')
 app_name = 'api'
 
