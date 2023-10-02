@@ -2,7 +2,7 @@
 ## Запуск проекта
 Клонируйте репозиторий с проектом на свой компьютер. В терминале из рабочей директории выполните команду:
 ```
-git clone https://github.com/xofmdo/foodgram-project-react.git
+git@github.com:BaldiskA/Python_Test_Task_HQ.git
 ```
 Установить и активировать виртуальное окружение
 ```
