@@ -44,7 +44,6 @@ http://localhost/api/users/
 "username": "string",
 "first_name": "Вася",
 "last_name": "Пупкин",
-"is_subscribed": false
 }
 ```
 Регистрация пользователя:
